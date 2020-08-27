@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>携程网</title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			header{
+				width: 100%;
+				display: flex;
+			}
+			header > a{
+				width: 100%;
+				flex: 1;
+			}
+			header > a > img{
+				width: 100%;
+			}
+			main{
+				width: 100%;
+				padding: 0 10px;
+				box-sizing: border-box;
+			}
+			main > .item{
+				width: 100%;
+				height: 100px;
+				background-color: aqua;
+				border-radius: 10px;
+				margin-top: 10px;
+				display: flex;
+			}
+			main > .item:nth-of-type(2){
+				background-color: green;
+			}
+			main > .item:nth-of-type(3){
+				background-color: indianred;
+			}
+			main > .item:nth-of-type(4){
+				background-color: royalblue;
+			}
+			main > .item > .left{
+				flex: 1;
+			}
+			main > .item > .right{
+				flex: 2;
+				flex-wrap: wrap;
+				display: flex;
+			}
+			main > .item > .right > a{
+				width: 50%;
+				display: block;
+				text-align: center;
+				line-height: 50px;
+				color: aliceblue;
+				text-decoration: none;
+				box-sizing: border-box;
+				border-left: 1px solid white;
+				border-bottom: 1px solid white;
+			}
+			main > .item > .right > a:nth-last-of-type(-n+2){
+				border-bottom: none;
+			}
+			main > .extra{
+				width: 100%;
+				display: flex;
+			}
+			main > .extra > a{
+				flex: 1;
+			}
+			main > .extra > a > img{
+				width: 100%;
+			}
+			footer{
+				width: 100%;
+			}
+			footer > nav{
+				width: 100%;
+				display: flex;
+				border: 1px solid #ccc;
+			}
+			footer > nav > a{
+				flex: 1;
+				text-align: center;
+				line-height: 150%;
+				text-decoration: none;
+				color: #888;
+			}
+			footer > p{
+				text-align: center;
+				line-height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<a href="">
+					<img src="img/header.png" >
+				</a>
+			</header>
+			<main>
+				<section class="item">
+					<div class="left"></div>
+					<div class="right">
+						<a href="">海外酒店</a>
+						<a href="">团购</a>
+						<a href="">特惠酒店</a>
+						<a href="">客栈公寓</a>
+					</div>
+				</section>
+				<section class="item">
+					<div class="left"></div>
+					<div class="right">
+						<a href="">海外酒店</a>
+						<a href="">团购</a>
+						<a href="">特惠酒店</a>
+						<a href="">客栈公寓</a>
+					</div>
+				</section>
+				<section class="item">
+					<div class="left"></div>
+					<div class="right">
+						<a href="">海外酒店</a>
+						<a href="">团购</a>
+						<a href="">特惠酒店</a>
+						<a href="">客栈公寓</a>
+					</div>
+				</section>
+				<section class="item">
+					<div class="left" ></div>
+					<div class="right">
+						<a href="">海外酒店</a>
+						<a href="">团购</a>
+						<a href="">特惠酒店</a>
+						<a href="">客栈公寓</a>
+					</div>
+				</section>
+				<section class="extra">
+					<a href="">
+						<img src="img/footer_1.png" >
+					</a>
+					<a href="">
+						<img src="img/footer_2.png" >
+					</a>
+				</section>
+			</main>
+			<footer>
+				<nav>
+					<a href="">电话预订</a>
+					<a href="">下载客户端</a>
+					<a href="">我的订单</a>
+				</nav>
+				<p>
+					<a href="">网站地图</a>
+					<a href="">ENGLISH</a>
+					<a href="">电脑版</a>	
+				</p>
+				<p>&copy 2020</p>
+			</footer>
+		</div>
+	</body>
+</html>
